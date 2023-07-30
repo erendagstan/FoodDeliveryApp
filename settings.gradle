@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+    buildscript {
+        repositories {
+            jcenter()
+        }
+        dependencies {
+            classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:7.3.1'
+        }
+    }
+
+}
+
+rootProject.name = "JetpackComposeFoodDeliveryApp"
+include ':app'
